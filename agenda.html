@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Agenda UGR - Principal</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/shop-homepage.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+</head>
+
+<body>
+
+
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" style="height:11em">
+    <div class="container">
+
+
+
+      <a class="navbar-brand" style="margin-top:-4em; padding-left:1em;" href="index.html"> <img src="img/logougr1.png" style="margin-right:0.2em; border-radius: 12px 12px 12px 12px;" height=32px alt="logo ugr"> Agenda UGR</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class=" w3-display-left collapse navbar-collapse " style="background-color:#343a40; padding-right:2em; margin-top:2em; width:auto; padding-left:2em;" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item ">
+            <a class="nav-link " href="index.html">Principal
+               
+              </a>
+          </li>
+
+          <li class="nav-item active">
+            <a class="nav-link" href="agenda.html">Agenda  <span class="sr-only">(current)</span></a>
+          </li>
+
+          <li class="nav-item ">
+            <a class="nav-link" href="novedades.html">Novedades  <span class="sr-only">(current)</span></a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="contacto.html">Contacto</a>
+          </li>
+
+          <li class="nav-item " style="padding-bottom:1em;">
+            <form class="nav-form" action="agenda.html">
+              <input type="text" size="auto" placeholder="Palabras claves ... ">
+              <button type="submit" class="btn btn-default">
+                Buscar
+              </button>
+            </form>
+          </li>
+          &nbsp;
+          <li class="nav-item dropdown" style="background-color:#343a40; ">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><img id="imgNavSel" src="img/spa.png" alt="..." class="img-thumbnail icon-small btn btn-default"><span id="lanNavSel"></span> <span class="caret"></span></a>
+
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <li>
+                <a href="#" class="dropdown-item"> <img src="img/spa.png" alt="..." class="img-thumbnail icon-small btn btn-default"> </a>
+              </li>
+              <li>
+                <a href="#" class="dropdown-item"> <img src="img/deu.png" alt="..." class="img-thumbnail icon-small btn btn-default"> </a>
+              </li>
+              <li>
+                <a href="#" class="dropdown-item"><img src="img/eng.png" alt="..." class="img-thumbnail icon-small btn btn-default"> </a>
+              </li>
+            </ul>
+          </li>
+          &nbsp;
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+
+  <div style="height:7em; text-align:center;">
+    <!-- este div coge separación para el menu con altura -->
+  </div>
+
+  <ul class="breadcrumb">
+    <li><a href="historico.html">Historico</a></li>
+    <li><a href="crear_evento.html">Crear Evento</a></li>
+
+  </ul>
+  <br>
+  <br>
+  <!-- Page Content -->
+  <div class="container">
+
+    <div class="row">
+
+      <div class="col-lg-4">
+
+        <h1 class="my-4">Agenda</h1>
+
+        <h3 class="my-4">Filtrar por</h3>
+
+        <!-- Bucador palabras clave -->
+        <div class="search-container">
+          <form action="agenda.html">
+            <input type="text" placeholder="Palabras clave" name="search">
+            <button type="submit"><i class="fa fa-search">Buscar</i></button>
+          </form>
+          <br>
+          <form action="#">
+            <div class="form-group ">
+              <input type="date" placeholder="Palabras clave" class="form-control col-sm-10" id="lugar">
+            </div>
+            <div class="form-group ">
+              <div class="slidecontainer">
+                <h5>Distancia
+                <img src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTYuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgd2lkdGg9IjE2cHgiIGhlaWdodD0iMTZweCIgdmlld0JveD0iMCAwIDUzMy4zMzMgNTMzLjMzMyIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNTMzLjMzMyA1MzMuMzMzOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+CjxnPgoJPHBhdGggZD0iTTI2Ni42NjYsMEMxNzQuNjE4LDAsMTAwLDc0LjYxOSwxMDAsMTY2LjY2N2MwLDE2Ni42NjcsMTY2LjY2NywzNjYuNjY3LDE2Ni42NjcsMzY2LjY2N3MxNjYuNjY3LTIwMCwxNjYuNjY3LTM2Ni42NjcgICBDNDMzLjMzMyw3NC42MTksMzU4LjcxMywwLDI2Ni42NjYsMHogTTI2Ni42NjYsMjY2LjY2N2MtNTUuMjI5LDAtMTAwLTQ0Ljc3MS0xMDAtMTAwYzAtNTUuMjI5LDQ0Ljc3MS0xMDAsMTAwLTEwMCAgIGM1NS4yMjksMCwxMDAsNDQuNzcxLDEwMCwxMDBDMzY2LjY2NiwyMjEuODk2LDMyMS44OTUsMjY2LjY2NywyNjYuNjY2LDI2Ni42Njd6IiBmaWxsPSIjMDAwMDAwIi8+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPC9zdmc+Cg==" />
+                </h5>
+                <input type="range" min="1" max="30" value="2" class="slider" id="myRange">
+                <p>Buscar en: <span id="demo"></span> km</p>
+              </div>
+              <div class="form-group">
+                <select class="form-control" style="width: 80%;">
+                  <option>Categoria</option>
+                  <option>Actualidad </option>
+                  <option>Ciencia</option>
+                  <option>Cultura</option>
+                </select>
+              </div>
+              <button type="submit" class="btn btn-primary">Buscar</button>
+            </div>
+          </form>
+        </div>
+
+      </div>
+      <!-- /.col-lg-3 -->
+
+      <div class="col-lg-8">
+
+
+        <div class="container py-3">
+          <div class="card">
+            <div class="row ">
+              <div class="col-md-4">
+                <a href="evento.html"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
+              </div>
+              <div class="col-md-8 px-3">
+               <div class="card-block px-3">
+                  <h4 class="card-title">
+                  <a href="evento.html">Título</a>
+                </h4>
+                  <p class="card-text">breve descripción <br>
+                  <a href="agenda.html">Categoria <button class="btn" style="background-color:#83D8F0;"></button></a> &nbsp;<br>
+                  
+                  Lugar-Fecha</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="container py-3">
+          <div class="card">
+            <div class="row ">
+              <div class="col-md-4">
+                <a href="evento.html"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
+              </div>
+              <div class="col-md-8 px-3">
+               <div class="card-block px-3">
+                  <h4 class="card-title">
+                  <a href="evento.html">Título</a>
+                </h4>
+                  <p class="card-text">breve descripción <br>
+                  <a href="agenda.html">Categoria <button class="btn" style="background-color:#E9E299;"></button></a> &nbsp;<br>
+                  
+                  Lugar-Fecha</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="container py-3">
+          <div class="card">
+            <div class="row ">
+              <div class="col-md-4">
+                <a href="evento.html"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
+              </div>
+              <div class="col-md-8 px-3">
+               <div class="card-block px-3">
+                  <h4 class="card-title">
+                  <a href="evento.html">Título</a>
+                </h4>
+                  <p class="card-text">breve descripción <br>
+                  <a href="agenda.html">Categoria <button class="btn" style="background-color:#D199E9;"></button></a> &nbsp;<br>
+                  
+                  Lugar-Fecha</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container py-3">
+          <div class="card">
+            <div class="row ">
+              <div class="col-md-4">
+                <a href="evento.html"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
+              </div>
+              <div class="col-md-8 px-3">
+               <div class="card-block px-3">
+                  <h4 class="card-title">
+                  <a href="evento.html">Título</a>
+                </h4>
+                  <p class="card-text">breve descripción <br>
+                  <a href="agenda.html">Categoria <button class="btn" style="background-color:#83D8F0;"></button></a> &nbsp;<br>
+                  
+                  Lugar-Fecha</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container py-3">
+          <div class="card">
+            <div class="row ">
+              <div class="col-md-4">
+                <a href="evento.html"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
+              </div>
+              <div class="col-md-8 px-3">
+                <div class="card-block px-3">
+                  <h4 class="card-title">
+                  <a href="evento.html">Título</a>
+                </h4>
+                  <p class="card-text">breve descripción <br>
+                  <a href="agenda.html">Categoria <button class="btn" style="background-color:#E9E299;"></button></a> &nbsp;<br>
+                  
+                  Lugar-Fecha</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- paginador-->
+        <div class="container">
+          <ul class="pagination">
+            <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item"><a class="page-link" href="#">Next</a></li>
+          </ul>
+        </div>
+        <!-- fin paginador-->
+      </div>
+      <!-- /.col-lg-9 -->
+
+    </div>
+    <!-- /.row -->
+  </div>
+  <!-- /.container -->
+
+  <!-- Footer -->
+  <footer class="py-5 bg-dark">
+    <div class="container" style="color:white;">
+      <div class="row">
+        <div class="col-sm">
+          <a href="index.html"> <img src="img/logougr1.png" style="margin-right:0.2em; border-radius: 12px 12px 12px 12px;" height=48px alt="logo ugr"> Agenda UGR</a>
+        </div>
+        <div class="col-sm">
+          <p class="m-0 text-center text-white">Copyright &copy; AgendaUGR 2018 - Bluediamond</p>
+        </div>
+        <div class="col-sm">
+          <p>Avda. del Hospicio, s/n C.P. 18010 Granada informa@ugr.es</p>
+        </div>
+      </div>
+
+      <form action="#" style="text-align:center;">
+        <input type="text" size="auto" placeholder="Introduce tu e-mail ">
+        <button type="submit" class="btn btn-default">
+          Suscríbete
+        </button>
+      </form>
+
+
+
+    </div>
+    <!-- /.container -->
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+<script>
+  var slider = document.getElementById("myRange");
+  var output = document.getElementById("demo");
+  output.innerHTML = slider.value;
+
+  slider.oninput = function() {
+    output.innerHTML = this.value;
+  }
+</script>
+
+
+</html>
